@@ -28,7 +28,7 @@ MongoClient.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true 
 });
 
 // Define a simple route
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.send('Hello, MongoDB!');
 });
 
