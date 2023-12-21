@@ -25,10 +25,10 @@ MongoClient.connect(
     // Set up your routes or other logic here
 
     // Close the MongoDB connection when the app is terminated
-    process.on("SIGINT", () => {
-      client.close();
-      process.exit();
-    });
+    // process.on("SIGINT", () => {
+    //   client.close();
+    //   process.exit();
+    // });
   }
 );
 
