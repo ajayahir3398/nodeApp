@@ -32,14 +32,18 @@ MongoClient.connect(
   }
 );
 
-// Define a simple route
-app.get("/home", (req, res) => {
-  res.send("Hello, MongoDB!");
-});
-
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+app.get("/", (req, res) => {
+  res.send("Hey this is my API running 🥳");
+});
+
+// Define a simple route
+app.get("/home", (req, res) => {
+  res.send("Hello, MongoDB!");
 });
 
 module.exports = app;
