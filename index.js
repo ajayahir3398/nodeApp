@@ -4,7 +4,7 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // MongoDB connection URI
 const mongoURI =
